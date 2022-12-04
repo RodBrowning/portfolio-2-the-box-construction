@@ -28,6 +28,11 @@ export default function Home() {
         <Hero />
         <Reputation />
         <About />
+        <button className='btn btn-primary'>Button</button>
+        <button className='btn btn-white'>Button</button>
+        <button className='btn btn-black'>Button</button>
+        <button className='btn btn-light'>Button</button>
+        <button className='btn btn-variant'>Button</button>
         <Services />
         <ServicesImgText />
         <Banner />
