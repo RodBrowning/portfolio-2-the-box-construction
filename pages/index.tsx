@@ -1,5 +1,15 @@
+import About from '../components/about/About'
+import Banner from '../components/banner/Banner'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
 import Head from 'next/head'
+import Hero from '../components/hero/Hero'
 import Image from 'next/image'
+import Nav from '../components/nav/Nav'
+import Projects from '../components/projects/Projects'
+import Reputation from '../components/reputation/Reputation'
+import Services from '../components/services/Services'
+import ServicesImgText from '../components/services/ServicesImgText'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,22 +21,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <p>Nav</p>
+        <Nav />
       </header>
 
       <main>
-        <p>Hero</p>
-        <p>Reputation</p>
-        <p>About</p>
-        <p>Services</p>
-        <p>Services img/text</p>
-        <p>Banner</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <Hero />
+        <Reputation />
+        <About />
+        <Services />
+        <ServicesImgText />
+        <Banner />
+        <Projects />
+        <Contact />
       </main>
 
       <footer>
-        <p>Footer</p>
+        <Footer />
       </footer>
     </div>
   )
