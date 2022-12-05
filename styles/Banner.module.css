@@ -13,14 +13,12 @@
     color: white;
     font-weight: 300;
     font-size: 1.5rem;
+    line-height: 1.8rem;
 }
 
 .button_div {
     align-self: center;
     min-width: 200px;
-}
-.button_div button {
-    font-size: 1.125rem;
 }
 
 @media only screen and (max-width: 768px) {

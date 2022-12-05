@@ -10,7 +10,7 @@ const Banner = () => {
             Free consultation with exceptional quality
           </h4>
           <p>
-            Just one call away: <a href="tel:+5511949485112">+55 11 9 4948 5112</a>
+            Just one call away: <a href="tel:+5511949485112">+55&nbsp;11&nbsp;9&nbsp;4948&nbsp;5112</a>
           </p>
         </div>
         <div className={BannerST.button_div}>
