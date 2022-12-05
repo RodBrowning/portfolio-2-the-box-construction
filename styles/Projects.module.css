@@ -1,0 +1,115 @@
+.container {
+    padding-top: 5.5rem;
+    padding-bottom: 8.6rem;
+}
+.inner_container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+
+}
+
+.menu ul li {
+    position: relative;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--color-light);
+    margin-bottom: 1.25rem;
+    margin-left: 1rem;
+}
+
+.menu ul li.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.menu ul li.active:before {
+    content: '';
+    height: 100%;
+    width: 4px;
+    background: var(--color-primary);
+    position: absolute;
+    left: -1rem;
+    top: 0;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+.slider_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.slider_card {
+    display: flex;
+    flex-direction: column;
+}
+.slider_card img { 
+    width: 100%;
+    height: auto;
+}
+.slider_card_text {
+    background: var(--color-primary);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.313rem;
+    padding: 0.75rem;
+    height: 100%;
+}
+.slider_card_text h5 {
+    color: white;
+    font-weight: 700;
+    line-height: 1.438rem;
+    margin-bottom: 0.75rem;
+}
+
+.slider_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider_navigation button {
+    width: 250px;
+}
+
+/*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
+@media only screen and (max-width: 1024px) {
+    .inner_container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+}
+/*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
+@media only screen and (max-width: 768px) {
+    
+}
+/*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
+@media only screen and (max-width: 600px) {
+    .inner_container {
+        gap: 1rem;
+    }
+    .slider_cards {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .menu ul {
+        row-gap: 0;
+        flex-wrap: wrap;
+    }
+}
+/*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
+@media only screen and (max-width: 425px) {
+    
+}
