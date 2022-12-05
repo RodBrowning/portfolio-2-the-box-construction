@@ -24,6 +24,7 @@
  display: none;
  position: relative;
  cursor: pointer;
+ z-index: 5;
 }
 .mobile_menu .links {
     display: flex;
@@ -51,12 +52,15 @@
 
 @media only screen and (max-width: 1024px) {
     .links a {
-        font-size: .8rem;
+        font-size: 0.9rem;
     }
 }
 /*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
 
 @media only screen and (max-width: 768px) {
+    .links a {
+        font-size: 1rem;
+    }
     .logo img {
         width: 100px;
         height: auto;

@@ -27,8 +27,10 @@
 }
 .text_container .inner_text_container p {
     margin: 2rem 0;
+    line-height: 23px;
+    font-size: 1.25rem;
 }
-.text_container .inner_text_container h5 {
+.text_container .inner_text_container h4 {
     color: white;
 }
 .text_container .inner_text_container a {

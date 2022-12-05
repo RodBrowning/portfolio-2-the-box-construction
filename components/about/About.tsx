@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className={AboutST.text_container}>
         <div className={AboutST.inner_text_container}>
-          <h5>About Us</h5>
+          <h4>About Us</h4>
           <p>
             For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. 
           </p>
