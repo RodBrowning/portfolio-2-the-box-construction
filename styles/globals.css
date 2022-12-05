@@ -117,6 +117,7 @@ input, select {
   --color-secondary-variant: #ef9f6c;
   --color-primary-light: #667299;
   --color-light: #C2C7D6;
+  --color-text-light: #858EAD;
   --color-black: #292E3D;
   --color-black-variant: #414554;
 
@@ -127,6 +128,10 @@ input, select {
   --container-width-md: 90%;
   --container-width-sm: 92%;
   --container-width-xsm: 95%;
+}
+
+.color-light {
+  color: var(--color-text-light);
 }
 
 .container {

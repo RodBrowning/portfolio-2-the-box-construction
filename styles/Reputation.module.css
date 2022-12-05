@@ -1,0 +1,58 @@
+.container {
+    padding: 3.75rem 0;
+}
+
+.heading {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 4rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.card {
+    border: 1.4px solid var(--color-light);
+    border-radius: 4px;
+    padding: 1.25rem;
+    flex: 1;
+}
+.card h5 {
+    padding: 1rem 0;
+}
+.card p {
+    line-height: 19px;
+}
+
+/*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
+
+@media only screen and (max-width: 1024px) {
+    .cards {
+        width: 95%;
+        gap: 3rem;
+    }
+}
+/*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        width: 98%;
+        gap: 1rem;
+    } 
+}
+/*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+/*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 425px) {
+    
+}
