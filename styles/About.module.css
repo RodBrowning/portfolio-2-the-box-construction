@@ -4,7 +4,7 @@
 }
 
 .image {
-    flex: 2;    
+    flex: 3;    
 }
 .image img {
     border-radius: 2px;
@@ -23,7 +23,7 @@
     padding: 2.5rem;
     background: var(--color-primary);
     color: white;
-    width: 105%;
+    width: 135%;
 }
 .text_container .inner_text_container p {
     margin: 2rem 0;
@@ -49,6 +49,9 @@
     .container {
         padding: 2rem 0;
     }
+    .text_container .inner_text_container {
+        padding: 1.5rem;
+    }
 }
 
 /*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
@@ -62,7 +65,7 @@
         position: relative;
         width: fit-content;
         transform: unset;
-        margin-top: -3px;
+        margin-top: -4px;
     }
     .image img {
         height: fit-content;
