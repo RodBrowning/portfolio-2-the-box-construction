@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    padding: 4.6rem 0;
+}
+
+.image {
+    flex: 2;    
+}
+.image img {
+    border-radius: 2px;
+    width: 100%;
+    object-fit: cover;
+}
+.text_container {
+    flex: 1;
+    align-self: center;
+    position: relative;
+}
+.text_container .inner_text_container {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 2.5rem;
+    background: var(--color-primary);
+    color: white;
+    width: 105%;
+}
+.text_container .inner_text_container p {
+    margin: 2rem 0;
+}
+.text_container .inner_text_container h5 {
+    color: white;
+}
+.text_container .inner_text_container a {
+    width: max-content;
+}
+/*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 4rem 0;
+    }
+}
+/*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 2rem 0;
+    }
+}
+
+/*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .text_container .inner_text_container {
+        position: relative;
+        width: fit-content;
+        transform: unset;
+        margin-top: -3px;
+    }
+    .image img {
+        height: fit-content;
+    }
+}
+/*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 425px) {
+    
+}
