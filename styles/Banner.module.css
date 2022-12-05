@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.container h4 {
+    color: white;
+    margin-bottom: 1.875rem;
+}
+.container a, .container p {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.button_div {
+    align-self: center;
+    min-width: 200px;
+}
+.button_div button {
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_fluid {
+        background-position: center;
+        background-size: cover;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .button_div button {
+        font-size: 1.5rem;
+    }
+}
