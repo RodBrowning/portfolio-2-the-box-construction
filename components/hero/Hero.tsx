@@ -23,7 +23,7 @@ const Hero = () => {
           navigation>
           <SwiperSlide>
             <div className={HeroST.content}>
-              <h6>Feature Projects</h6>
+              <h5>Feature Projects</h5>
               <p>
                 The National University of Architecture
               </p>
@@ -31,7 +31,7 @@ const Hero = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={HeroST.content}>
-              <h6>New Project</h6>
+              <h5>New Project</h5>
               <p>
                 The University of Computing Science
               </p>
@@ -57,7 +57,9 @@ const PrevBtn = () => {
 const NextBtn = () => {
   const swiper = useSwiper();
   return (
-    <button className='btn btn-black' onClick={() => swiper.slideNext()}><ArrowRight strokeWidth={2} size={36} /> Next</button>
+    <button className='btn btn-black' onClick={() => swiper.slideNext()}>
+      Next <ArrowRight strokeWidth={2} size={36} />
+    </button>
   )
 }
 
