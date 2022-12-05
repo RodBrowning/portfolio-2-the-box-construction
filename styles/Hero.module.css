@@ -25,9 +25,9 @@
     right: 0;
     bottom: 0;
     width: 24rem;
+    background: var(--color-primary);
 }
 .slider .content {
-    background: var(--color-primary);
     color: white;
     text-align: center;
     padding: 1.25rem 3.25rem;
