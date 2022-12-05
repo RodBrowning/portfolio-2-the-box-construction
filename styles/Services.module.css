@@ -64,6 +64,9 @@
 /*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
 @media only screen and (max-width: 600px) {
     .cards {
+        width: 100%;
+    }
+    .cards {
         grid-template-columns: 1fr;
     }
 }
