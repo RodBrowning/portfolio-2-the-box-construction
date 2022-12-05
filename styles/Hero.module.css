@@ -1,0 +1,96 @@
+.hero_section {
+    position: relative;
+}
+
+.hero_img {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    height: 80vh;
+    max-height: 646px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container h1 {
+    width: 50%;
+}
+.slider {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24rem;
+}
+.slider .content {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1.25rem 3.25rem;
+}
+.slider .content h6 {
+    color: white;
+    padding-bottom: 1.2rem;
+}
+.slider .content p {
+    line-height: 1.75rem;
+
+}
+.slider .slider_nav {
+    display: flex;
+}
+.slider .slider_nav button {
+    width: 100%;
+    border-radius: 0;
+    height: 2.5rem;
+    font-weight: 400;
+}
+
+
+/*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
+
+@media only screen and (max-width: 1024px) {
+    .container h1 {
+        width: 70%;
+    }
+}
+/*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
+
+@media only screen and (max-width: 768px) {
+    .container h1 {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    
+}
+/*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 600px) {
+    .hero_img {
+        background-position: top;
+    }
+    .container {
+        height: 50vh;
+        text-align: center;
+    }
+    .container h1 {
+        padding-bottom: 0;
+        line-height: 4rem;
+    
+    }
+    .slider {
+        position: relative;
+        margin: auto;
+    }
+}
+/*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
+
+@media only screen and (max-width: 425px) {
+    .slider {
+        width: unset;
+    }
+}

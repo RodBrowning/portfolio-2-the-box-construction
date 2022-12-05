@@ -138,11 +138,11 @@ input, select {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-black);
   font-weight: 600;
-  line-height: 84px;
 }
 
 h1 {
   font-size: 4.5rem;
+  line-height: 84px;
 }
 
 h4 {
@@ -156,6 +156,10 @@ h4 {
   border: 1px solid transparent;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .btn-primary {
   background: var(--color-primary);
@@ -213,12 +217,20 @@ h4 {
   .container {
     width: var(--container-width-lg);
   }
+  h1 {
+    font-size: 4rem;
+
+  }
 }
 /*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .container {
     width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 3.5rem;
+
   }
 }
 
@@ -227,11 +239,19 @@ h4 {
   .container {
     width: var(--container-width-sm);
   }
+  h1 {
+    font-size: 3rem;
+
+  }
 }
 /*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
 
 @media only screen and (max-width: 425px) {
   .container {
     width: var(--container-width-xsm);
+  }
+  h1 {
+    font-size: 2.5rem;
+
   }
 }
