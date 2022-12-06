@@ -23,6 +23,9 @@
 .address_data .label p {
     margin-right: 1rem;
 }
+.address_data .label_data a {
+    color: unset;
+}
 .left_content .label, .right_content label {
     min-width: 8rem;
     color: var(--color-primary);
@@ -40,6 +43,9 @@
     display: flex;
     gap: 0.5rem;
 }
+.news .inputs input[type=email] {
+    width: 100%;
+}
 
 .social_div {
     display: flex;
@@ -50,11 +56,22 @@
     display: flex;
     gap: 1.3rem;   
 }
+.social_div .social svg path {
+    fill: var(--color-black);
+    cursor: pointer;
+}
+.social_div .social svg:hover path {
+    fill: var(--color-black-variant);
+}
 
 /*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
 @media only screen and (max-width: 1024px) {
     .container { 
         gap: 1.5rem;
+    }
+    .container .right_content {
+        margin: auto;
+        width: 60%;
     }
     .news .inputs {
         flex-direction: column;
@@ -69,10 +86,6 @@
         flex-direction: column;
         gap: 3rem;
         font-size: 1rem;
-    }
-    .container .right_content {
-        margin: auto;
-        width: 60%;
     }
     .container .right_content .social_div .social {
         justify-content: center;
@@ -92,6 +105,9 @@
     }
     .container .left_content .logo {
         text-align: center;
+    }
+    .container .left_content .address_data {
+        gap: 0.5rem;
     }
 }
 /*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
