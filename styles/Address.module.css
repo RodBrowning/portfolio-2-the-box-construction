@@ -1,0 +1,113 @@
+.container {
+    padding: 5.313rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+.left_content, .right_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.address_data {
+    display: flex;
+    margin-bottom: 2rem;
+    font-style: normal;
+}
+.address_data:last-child {
+    margin-bottom: 0;
+}
+.address_data .label p {
+    margin-right: 1rem;
+}
+.left_content .label, .right_content label {
+    min-width: 8rem;
+    color: var(--color-primary);
+}
+.right_content {    
+    width: 40%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.news .inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.news .inputs input[type=email] {
+    border: 1px solid var(--color-light);
+    border-radius: 4px;
+    padding: 0.625rem 0.5rem;
+    width: 100%;
+}
+.news .inputs input[type=email]::placeholder {
+    font-size: 1rem;
+    color: var(--color-light);
+}
+
+.social_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.social_div .social {
+    display: flex;
+    gap: 1.3rem;   
+}
+
+/*============= MEDIA QUERIE (LARGE DEVICES)  ===============*/
+@media only screen and (max-width: 1024px) {
+    .container { 
+        gap: 1.5rem;
+    }
+    .news .inputs {
+        flex-direction: column;
+    }
+    .news .inputs input[type=email] {
+        width: auto;
+    }
+}
+/*============= MEDIA QUERIE (MEDIUM DEVICES)  ===============*/
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+        font-size: 1rem;
+    }
+    .container .right_content {
+        margin: auto;
+        width: 60%;
+    }
+    .container .right_content .social_div .social {
+        justify-content: center;
+    }
+}
+/*============= MEDIA QUERIE (SMALL DEVICES)  ===============*/
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 3rem 0;
+    }
+    .container .right_content {  
+        width: 90%;
+    }
+    .container .left_content .address_data {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .container .left_content .logo {
+        text-align: center;
+    }
+}
+/*============= MEDIA QUERIE (EXTRA SMALL DEVICES)  ===============*/
+@media only screen and (max-width: 425px) {
+    .container .right_content {  
+        width: 100%;
+    }
+}

@@ -1,4 +1,5 @@
 import About from '../components/about/About'
+import Address from '../components/address/Address'
 import Banner from '../components/banner/Banner'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
@@ -32,6 +33,7 @@ export default function Home() {
         <Banner />
         <Projects />
         <Contact />
+        <Address />
       </main>
 
       <footer>

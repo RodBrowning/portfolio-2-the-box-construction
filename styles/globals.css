@@ -215,6 +215,19 @@ h5 {
   color: white;
 }
 
+.btn-orange {
+  background: var(--color-secondary);
+  border: 1px solid transparent;
+  color: white;
+  padding: 0.625rem 1.438rem;
+  border-radius: 4px;
+}
+
+.btn-orange:hover {
+  background: var(--color-secondary-variant);
+  color: white;
+}
+
 .btn-variant {
   background: var(--color-secondary);
   padding: 0.6rem 1rem;
