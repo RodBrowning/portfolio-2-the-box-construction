@@ -1,0 +1,14 @@
+.container_fluid {
+    background: var(--color-primary);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.copy p {
+    padding: 1.625rem 0;
+    color: white;
+    font-weight: 300;
+    line-height: 1.125rem;
+}

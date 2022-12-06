@@ -3,7 +3,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className={FooterST.container_fluid} >
+      <div className={`container ${FooterST.container}`}>
+        <div className={FooterST.copy}>
+          <p>TheBox Company © 2022. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
   )
 }
 
