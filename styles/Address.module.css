@@ -41,17 +41,6 @@
     gap: 0.5rem;
 }
 
-.news .inputs input[type=email] {
-    border: 1px solid var(--color-light);
-    border-radius: 4px;
-    padding: 0.625rem 0.5rem;
-    width: 100%;
-}
-.news .inputs input[type=email]::placeholder {
-    font-size: 1rem;
-    color: var(--color-light);
-}
-
 .social_div {
     display: flex;
     flex-direction: column;

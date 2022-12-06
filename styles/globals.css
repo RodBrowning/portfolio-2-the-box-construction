@@ -239,6 +239,21 @@ h5 {
   background: var(--color-secondary-variant);
 }
 
+input, textarea, select {
+  padding: 0.625rem 0.5rem;
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+input[type="submit"] {
+  width: 270px;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
 .swiper-wrapper {
   display: flex;
   align-items: center;
